@@ -1,0 +1,140 @@
+
+// form {
+//   // max-width: 450px;
+//   max-width: 615px;
+//   margin: 0 auto;
+//   // border: 2px solid #000000;
+
+//   // positioning context
+//   > div {
+//     position: relative;
+//     background:white;
+//     // border-bottom: 1px solid #ccc;
+    
+//     // Looks like placeholder
+//     > label {
+//       opacity: 0.3;
+//       font-weight: bold;
+//       position: absolute;
+//       top: 22px;
+//       left: 20px;
+//     }
+//     textarea {
+//       &::-webkit-input-placeholder { color: #c2c2c2; font-size: 0.8em; padding: 0 0 0 27px; }
+//       &:-moz-placeholder { color: #c2c2c2; font-size: 0.8em; }
+//       &:-ms-input-placeholder { color: #c2c2c2; font-size: 0.8em;}
+//       &:-moz-placeholder { color: #c2c2c2; font-size: 0.8em;}
+//     }
+
+//     > input[type="text"],
+//     > input[type="email"],
+//     > input[type="tel"] {
+//       width: 100%;
+//       border: 0;
+//       padding: 5px 20px 3px 50px;
+//       // background: #eee;
+//       // line-height: 1;
+
+//       &::placeholder {
+//         color: #c2c2c2;
+//         font-size: 0.8em;
+//       }
+      
+//       &:focus {
+        
+//         // removing default focus style
+//         outline: 0;
+//         // adding new one
+//         background: white;
+        
+//         & + label {
+//           opacity: 0;
+//         }
+//       }
+      
+//       &:valid {
+//         // background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+//         background: orange;
+//         background-size: 20px;
+//         background-repeat: no-repeat;
+//         background-position: 20px 20px;
+//         color:green;
+//         // text-decoration: underline;
+//         // content: url("../../../theme/images/account/check1.svg");
+//         & + label {
+//           opacity: 0;
+//         }
+//       }
+//       &:valid ::before {
+//         content: url("../../../theme/images/account/check1.svg");
+//       }
+
+//       &:invalid:not(:focus):not(:placeholder-shown) {
+//         background: pink;
+//         & + label {
+//           opacity: 0;
+//         }
+//       }
+      
+//       &:invalid:focus:not(:placeholder-shown) {
+//         color:blueviolet;
+//         & ~ .requirements {
+//           max-height: 200px;
+//           padding: 0 30px 3px 50px;
+//         }
+//       }
+      
+//     }
+    
+//     .requirements {
+//       padding: 0 30px 0 50px;
+//       color: #999;
+//       max-height: 0;
+//       transition: 0.28s;
+//       overflow: hidden;
+//       color: red;
+//     }
+    
+//   }
+  
+//   // input[type="submit"] {
+//   //   display: block;
+//   //   width: 100%;
+//   //   margin: 20px 0;
+//   //   background: #41D873;
+//   //   color: white;
+//   //   border: 0;
+//   //   padding: 20px;
+//   //   font-size: 1.2rem;
+//   // }
+  
+// }
+
+// body {
+//   background: #333;
+//   font-family: 'PT Sans', sans-serif;
+//   padding: 20px;
+// }
+// * {
+//   box-sizing: border-box;
+// }
+// --------------------------
+
+.form-space {
+  margin-left: 10px;
+  text-align: left;
+  &-l0 {
+    text-align: left;
+  }
+  &-lt0 {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: -4px;
+  }
+  &-t1 {
+    // margin-left: 10px;
+    // text-align: left;
+    margin-top: 10px;
+  }
+
+}

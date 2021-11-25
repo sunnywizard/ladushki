@@ -1,0 +1,89 @@
+@import '../../../theme/styles/settings.scss';
+.admin-select,
+.actions__btn {
+  background-color: #fff;
+  // border: 1px solid #808080;
+  border: 1px solid $lightgreen;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #78ad5e;
+  padding: 7px 5px;
+  min-width: 150px;
+  margin-right: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.actions__btn:hover{
+  background-color: $primary;
+  color: #ffffff;
+  border: none;
+}
+
+.actions__btn1 {
+  border-radius: $button-radius;
+  background-color: #fff;
+  border-bottom: 2px solid #979797;
+  box-shadow: 0 5px 4px #c2c2c2;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 7px 5px;
+  min-width: 150px;
+  margin-right: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #78ad5e;
+}
+
+.actions__btn1:hover{
+  // background-color: $primary;
+  // color: #ffffff;
+  // border: none;
+
+  color: #fd6b0d;
+  border-bottom: 1px solid #979797;
+  box-shadow: none;
+}
+
+.actions {
+  margin-bottom: 10px;
+}
+
+.tbl tbody tr {
+  cursor: pointer;
+}
+
+.tbl tbody tr:hover {
+  background-color: $primary;
+}
+
+.tbl tbody tr:hover td {
+  color: #ffffff;
+}
+
+.centered{
+  text-align: center;
+}
+
+.column-icon{
+  display: inline-block;
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.service__buttons{
+  width: 58px;
+}
+
+.shirina { 
+  width: 43vw;
+  white-space: break-spaces;
+  }

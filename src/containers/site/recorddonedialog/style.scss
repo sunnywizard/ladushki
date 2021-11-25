@@ -1,0 +1,119 @@
+@import '../../../theme/styles/settings.scss';
+.dialog-header {
+  margin: 30px 90px 30px 90px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.confirm-text {
+  display: block;
+  margin: 40px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.tbl-done {
+  font-family: 'Montserrat Regular', sans-serif;
+  font-style: normal;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+
+  th,
+  td {
+    border: 1px solid rgba(196, 196, 196, 0.4);
+    color: #979797;
+    padding: 5px;
+  }
+
+  th {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    th:last-child {
+      border: none;
+    }
+  }
+
+  td {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000000;
+  }
+}
+
+.done-container{
+  padding: 20px;
+}
+
+.done-buttons{
+  text-align: center;
+}
+
+.done-btn{
+  // font-style: normal;
+  // font-weight: 600;
+  // font-size: 18px;
+  // line-height: 22px;
+  // color: #FFFFFF;
+  // background-color: $primary;
+  padding: 9px 77px;
+  // border-radius: 40px;
+}
+
+.done-email-input{
+  background: #FFFFFF;
+  border: 1px solid #3EB436;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(87, 174, 71, 0.25);
+  border-radius: 10px;
+  margin-left: 12px;
+  outline: none;
+  padding: 6px 11px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  width: 250px;
+}
+
+.done-email{
+  display: flex;
+  align-items: center;
+}
+
+.done-email .done-checkbox .checkbox__text{
+  font-family: "Montserrat Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000
+}
+
+.done-comment{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  margin: 26px 0 20px;
+}
+
+.done-print{
+  margin-top: 10px;
+  padding: 7px 15px;
+  color: $primary;
+  background: #FFFFFF;
+  border: 1px solid $primary;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(87, 174, 71, 0.5);
+  border-radius: 10px;
+}
+
+.done-email-error{
+ border: 1px solid crimson;
+}

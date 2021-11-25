@@ -1,0 +1,124 @@
+.switch-link {
+  float: right;
+  margin-right: 40px;
+  font-family: "Montserrat Regular", sans-serif;
+  font-style: normal;
+  // font-weight: 600;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #006ec2;
+  cursor: pointer;
+}
+
+.tbl {
+  font-family: "Montserrat Regular", sans-serif;
+  font-style: normal;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  th,
+  td {
+    border: 1px solid rgba(196, 196, 196, 0.4);
+    color: #979797;
+    padding: 5px;
+  }
+  th {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    th:last-child {
+      border: none;
+    }
+  }
+
+  td {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000000;
+  }
+  td.cell-date {
+    color: #3eb436;
+    text-align: center;
+  }
+  .cell-number {
+    text-align: center;
+  }
+  .cell-service{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .cell-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000000;
+  }
+  .cell-spec {
+    color: #3eb436;
+  }
+  .cell-phone {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .cell-action {
+    border: none;
+  }
+
+  .cell-change {
+    cursor: pointer;
+    img {
+      margin: 0 auto;
+      display: inherit;
+    }
+  }
+
+  .action {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: normal;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+  }
+}
+
+.modal-form {
+  border-radius: 4px;
+}
+
+.record-list-actions{
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.actions-datepicker{
+  // border: 1px solid #808080;
+  border: 1px solid #aad7ac;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  padding: 7px 5px;
+  width: 100px;
+  margin-right: 10px;
+}
+
+
+
+

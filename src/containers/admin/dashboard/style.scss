@@ -1,0 +1,60 @@
+
+.admin-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.admin__subheader {
+  margin: 30px 0 30px 0;
+}
+
+.admin__breadcrumb {
+  font-family: "Montserrat Regular", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 10px;
+  color: #979797;
+  &:after{
+    margin: 0 0 2px 10px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    // background-color: #3EB436;
+    background-color: #fd6b0d;
+  }
+  &:last-child{
+    color: #000000;
+  }
+  &:last-child:after{
+    content: none;
+  }
+}
+
+.card {
+  border: 2px solid #808080;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card__doctor {
+  p:last-child {
+    margin: 0;
+  }
+}
+
+.spec {
+  color: crimson;
+  font-weight: bold;
+}
+
+.fc-button-primary{
+  background-color: grey;
+}

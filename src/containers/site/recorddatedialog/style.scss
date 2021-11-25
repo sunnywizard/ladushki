@@ -1,0 +1,158 @@
+@import '../../../theme/styles/settings.scss';
+
+.list-dialog-container {
+  font-family: 'Montserrat Regular', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #000000;
+}
+
+.list-dialog-header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.confirm-text {
+  display: block;
+  margin: 40px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.record-list-dialog {
+  // border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  max-width: 700px;
+  width: 100%;
+}
+
+.list-item {
+  padding: 9px 20px;
+  color: $primary;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  border-top: 1px solid #dadada;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:last-child {
+    border-bottom: 1px solid #dadada;
+  }
+
+  &:hover {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+.record-list {
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.record-list-buttons {
+  padding: 14px 25px;
+  text-align: right;
+}
+
+.record-list-button {
+  border-radius: 48px;
+  background-color: $primary;
+  padding: 9px 52px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+// /* width */
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }
+
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background: #f1f1f1;
+// }
+
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: #888;
+// }
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #555;
+// }
+
+.schedule-dialog-container {
+  padding: 10px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule__item {
+  display: block;
+  border-radius: 4px;
+  // border: 1px solid $primary;
+  border: 1px solid $lightgreen;
+  width: 100%;
+  padding: 5px 10px;
+  cursor: not-allowed;
+  // background-color: $primary;
+  background-color: $lightgreen;
+  margin-top: 5px;
+  // color: #ffffff;
+  color: $blacklada;
+}
+
+.vacant {
+  background-color: transparent;
+  cursor: pointer;
+  color: $primary;
+  // color: $blacklada;
+  &:hover {
+    // background-color: $primary;
+    color: $orange;
+  }
+}
+// .vacant :hover{
+//   // background-color: transparent;
+//   // cursor: pointer;
+//   color: $orange;
+// }
+
+.record-date-selector {
+  // border: 1px solid $primary;
+  border: 1px solid $lightgreen;
+  border-radius: 40px;
+  .date-btn {
+    // background-color: $primary;
+    background-color: $lightgreen;
+    padding: 5px;
+    border: 1px solid $lightgreen;
+    // border: 1px solid $primary;
+    color: #ffffff;
+  }
+  .date-left {
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+  }
+  .date-right {
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  span.date {
+    padding: 10px;
+  }
+}

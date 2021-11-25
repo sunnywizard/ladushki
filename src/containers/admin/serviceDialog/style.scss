@@ -1,0 +1,30 @@
+@import '../../../theme/styles/settings';
+
+.service-dialog-container{
+  padding: 10px;
+}
+
+.service__input{
+  display: block;
+  margin: 10px 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  & label{
+    display: block;
+    color: #000000;
+
+  }
+  & input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #BCBEC0;
+  }
+}
+
+.error{
+  border: 1px solid crimson;
+}

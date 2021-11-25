@@ -1,0 +1,20 @@
+@import '../../../theme/styles/settings';
+
+.service-dialog-container{
+  padding: 10px;
+}
+
+.service__input{
+  display: block;
+  margin: 10px 0;
+  & label{
+    display: block;
+  }
+  & input{
+    width: 100%;
+  }
+}
+
+.error{
+  border: 1px solid crimson;
+}

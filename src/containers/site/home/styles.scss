@@ -1,0 +1,206 @@
+
+// form {
+//   // max-width: 450px;
+//   max-width: 615px;
+//   margin: 0 auto;
+//   // border: 2px solid #000000;
+
+//   // positioning context
+//   > div {
+//     position: relative;
+//     background:white;
+//     // border-bottom: 1px solid #ccc;
+    
+//     // Looks like placeholder
+//     > label {
+//       opacity: 0.3;
+//       font-weight: bold;
+//       position: absolute;
+//       top: 22px;
+//       left: 20px;
+//     }
+//     textarea {
+//       &::-webkit-input-placeholder { color: #c2c2c2; font-size: 0.8em; padding: 0 0 0 27px; }
+//       &:-moz-placeholder { color: #c2c2c2; font-size: 0.8em; }
+//       &:-ms-input-placeholder { color: #c2c2c2; font-size: 0.8em;}
+//       &:-moz-placeholder { color: #c2c2c2; font-size: 0.8em;}
+//     }
+
+//     > input[type="text"],
+//     > input[type="email"],
+//     > input[type="tel"] {
+//       width: 100%;
+//       border: 0;
+//       padding: 5px 20px 3px 50px;
+//       // background: #eee;
+//       // line-height: 1;
+
+//       &::placeholder {
+//         color: #c2c2c2;
+//         font-size: 0.8em;
+//       }
+      
+//       &:focus {
+        
+//         // removing default focus style
+//         outline: 0;
+//         // adding new one
+//         background: white;
+        
+//         & + label {
+//           opacity: 0;
+//         }
+//       }
+      
+//       &:valid {
+//         // background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+//         background: orange;
+//         background-size: 20px;
+//         background-repeat: no-repeat;
+//         background-position: 20px 20px;
+//         color:green;
+//         // text-decoration: underline;
+//         // content: url("../../../theme/images/account/check1.svg");
+//         & + label {
+//           opacity: 0;
+//         }
+//       }
+//       &:valid ::before {
+//         content: url("../../../theme/images/account/check1.svg");
+//       }
+
+//       &:invalid:not(:focus):not(:placeholder-shown) {
+//         background: pink;
+//         & + label {
+//           opacity: 0;
+//         }
+//       }
+      
+//       &:invalid:focus:not(:placeholder-shown) {
+//         color:blueviolet;
+//         & ~ .requirements {
+//           max-height: 200px;
+//           padding: 0 30px 3px 50px;
+//         }
+//       }
+      
+//     }
+    
+//     .requirements {
+//       padding: 0 30px 0 50px;
+//       color: #999;
+//       max-height: 0;
+//       transition: 0.28s;
+//       overflow: hidden;
+//       color: red;
+//     }
+    
+//   }
+  
+//   // input[type="submit"] {
+//   //   display: block;
+//   //   width: 100%;
+//   //   margin: 20px 0;
+//   //   background: #41D873;
+//   //   color: white;
+//   //   border: 0;
+//   //   padding: 20px;
+//   //   font-size: 1.2rem;
+//   // }
+  
+// }
+
+// body {
+//   background: #333;
+//   font-family: 'PT Sans', sans-serif;
+//   padding: 20px;
+// }
+// * {
+//   box-sizing: border-box;
+// }
+// --------------------------
+
+// .form-space {
+//   margin-left: 10px;
+//   text-align: left;
+//   &-l0 {
+//     text-align: left;
+//   }
+//   &-lt0 {
+//     text-align: left;
+//     margin-top: 10px;
+//     margin-left: -4px;
+//   }
+//   &-t1 {
+//     // margin-left: 10px;
+//     // text-align: left;
+//     margin-top: 10px;
+//   }
+
+// }
+// --------- смена картинок
+.animate2{
+
+  position:relative;
+  // margin:0 auto;/* устанваливаем блок div по центру страницы*/
+  // width:480px; /* Ширина */
+  // height: 360px;  /* Высота */               
+  // width: 180vw; 
+  // height:180vw;
+  height:180px;
+}
+
+.animate2 img {
+  position:absolute; /* абсолютное позиционирование*/
+  left: 0; /* выравниваем картинки по левому верхнему углу div-а*/
+  top: 0; /* выравниваем картинки по левому верхнему углу div-а */  
+}
+.animate2 img.first { /* первая картинка полностью прозрачная */
+  opacity:0;
+  filter:alpha (opacity=0);
+}
+
+.animate2:hover img.first { /* при наведении курсора первая картинка становится не прозрачной */
+  opacity:1;
+  filter:alpha (opacity=100);
+  // border:2px solid #fd6b0d;
+}
+
+.animate2:hover img.second, .animate2 img.second:hover { /* а вторая при наведении курсора становится прозрачной */
+  opacity:0;
+  filter:alpha (opacity=0);
+}
+// ---медленное появление
+// .animate2:hover img.second, .animate2 img.second:hover {
+//   opacity:0;
+//   filter:alpha (opacity=0);
+//   -moz-transition: all 2s ease;
+//   -webkit-transition: all 2s ease;
+//   -o-transition: all 2s ease;
+//   transition: all 2s ease;
+// }
+// ------- сжатие и исчезновение
+// .animate2:hover img.second, .animate2 img.second:hover {
+//   opacity:0;
+//   filter:alpha (opacity=0);
+//   -moz-transform:scale (0, 1);
+//   -webkit-transform:scale (0, 1);
+//   -o-transform:scale (0, 1);
+//   -ms-transform:scale (0, 1);
+//   transform:scale (0, 1); /* уменьшаем ширину картинки до 0 */
+// }
+
+.toplink_hm {
+  // text-overflow: ellipsis; /* Добавляем многоточие */
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis; /* Добавляем многоточие */
+  overflow: hidden;
+  -ms-line-clamp: 2; /* Определяем количество строк в line-clamp, здесь строка 1 */
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  display:-webkit-box;
+  display:box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}

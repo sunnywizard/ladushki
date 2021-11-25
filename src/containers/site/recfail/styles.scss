@@ -1,0 +1,19 @@
+.coursenf {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-wrap {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.21;
+    padding: 12px 138px 12px 120px;
+  }
+
+  &-h1 {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.21;
+    margin: 30px 0 16px;
+  }
+}

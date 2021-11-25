@@ -1,0 +1,185 @@
+// *
+// {
+//   margin:0;
+//   padding:0;
+//   // font-family:'Roboto',sans-serif;
+// }
+// // body
+// // {
+// //   background:#03a9f4;
+// //   align-items:center;
+// //   justify-content:center;
+// //   min-height:100vh;
+// //   display:flex;
+// // }
+// .box
+// {
+//   // background:#fff;
+//   // width:300px;
+//   // height:400px;
+//   // display:flex;
+//   // justify-content:center;
+//   // align-items:center;
+//   // position:relative;
+//   // flex-direction:column;
+//   // box-shadow:0 30px 60px rgba(0,0,0,.4);
+//   // transition: transform .2s;
+// }
+// /* .box:hover
+// {
+//  transform:scale(1.2);
+// } */
+// .box .percent
+// {
+//   width:150px;
+//   height:150px;
+//   position:relative;
+// }
+// .box .percent svg
+// {
+//   width:150px;
+//   height:150px;
+//   position:relative;
+// }
+// .box .percent svg circle
+// {
+//   width:150px;
+//   height:150px;
+//   fill:none;
+//   stroke-width:10;
+//   stroke:#000;
+//   transform:translate(5px,5px);
+//   stroke-dasharray:440;
+//   stroke-dashoffset:440;
+//   stroke-linecap:round;
+// }
+// .box .percent svg circle:nth-child(1)
+// {
+//   stroke-dashoffset:0;
+//   stroke:#f3f3f3;
+// }
+// .box .percent svg circle:nth-child(2)
+// {
+//   stroke-dashoffset:calc(440 - (440 * 87) / 100);
+//   stroke:#03a9f4;
+// }
+// .box .percent .num
+// {
+//   top:0;
+//   left:0;
+//   width:100%;
+//   height:100%;
+//   display:flex;
+//   justify-content:center;
+//   align-items:center;
+//   position:absolute;
+//   color:#111;
+// }
+// .box .percent .num h2
+// {
+//   font-size:48px;
+// }
+// .box .percent .num h2 span
+// {
+//   font-size:24px;
+// }
+// .box .text
+// {
+//   padding: 10px 0 0;
+//   color:#999;
+//   font-weight:700;
+//   letter-spacing:1px;
+// }
+
+// .nontouch nav a:hover{ 
+//     background: yellow;
+// }
+
+// ----------------
+.tabs {
+    position: relative;
+	margin: 40px auto;
+	width: 750px;
+}
+
+.tabs1 input {
+	// position: absolute;
+	// z-index: 1000;
+	// width: 120px;
+	// height: 40px;
+    text-align: center;
+    margin-top: 0px;
+    // padding: 10px 0 0 0;
+	opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+	cursor: pointer;
+}
+// .tabs1 input:hover + label {
+// 	// background: #5ba4a4;
+// 	background: #a9aaaa;
+// 	font-size: 15px;
+// 	height: 40px;
+// 	position: relative;
+// 	padding: 0 10px 0 10px;
+//     left: -1px;
+//     float: left;
+// 	display: block;
+// 	color: #f00a0a;
+// 	letter-spacing: 1px;
+// 	text-align: center;
+// }
+
+ 
+// .tabs1 label:first-of-type {
+//     z-index: 4;
+//     box-shadow: 2px 0 2px rgba(0,0,0,0.1);
+// }
+.tabs1 label {
+	font-size: 15px;
+	height: 40px;
+	position: relative;
+	padding: 0 10px 0 10px;
+    left: -1px;
+    float: left;
+	display: block;
+	color: #080808;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.tabs2 input {
+    text-align: center;
+    margin-top: 0px;
+	opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+	cursor: pointer;
+}
+
+.tabs2 label {
+	font-size: 15px;
+	height: 40px;
+	position: relative;
+	padding: 0 10px 0 10px;
+    left: -5px;
+    float: left;
+	display: block;
+	color: #080808;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+// ************* выделение папок ОТЗЫВЫ / ОТВЕТЫ
+.tumba {
+	border-radius: 5px 5px 0 0;
+	border: 1px solid #aad7ac;
+	border-bottom: none;
+}
+.tumba1 {
+	border-radius: 5px 5px 0 0;
+	border: 1px solid #aad7ac;
+	// border-bottom: none;
+	background: #f8f8f8;
+	color: #000;
+}
