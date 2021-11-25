@@ -139,26 +139,8 @@ class Record extends Component {
       phone: this.state.clientPhone.replace(/[ ]/g, ''),
       paymentType: this.state.paymentMethod === 'visit' ? 0 : 1,
     };
-    // const vega = false;
-    // this.props.storeRecord(record, vega);
     this.props.storeRecord(record);
-    // console.log('---PFGBCM-----', record);
-    // alert('---PFGBCM-----');
-
-    // console.log('VEGA=====', this.props);
-    // // this.setState({ showDoneDialog: false });
-    // this.props.filial.fetching;
-    // this.setState({ showDoneDialog: vega });
-    // console.log('false=====', vega);
-
   };
-
-  // failRecord = () => {
-  //      console.log(this.props);
-  //   this.props.filial.error === null ? console.log('////правильно***') : console.log('++++ОШИБКА***');
-  //   // this.setState({ showDoneDialog: true });
-  //   this.props.filial.error === null ? this.setState({ showDoneDialog: true }) : console.log('++++ОШИБКА***');
-  // }  
 
   prepareDialog = (type) => {
     if (type === 'filial') {
@@ -710,8 +692,6 @@ class Record extends Component {
             />
           </Modal>
         )}
-        {/* {console.log('---Props.filial.error!!!!-----', this.props.filial.error)}
-        {console.log('---this.state.showDoneDialog!!!!-----', this.state.showDoneDialog)}                 */}
         {this.state.showDoneDialog && (
           <Modal
             open={this.state.showDoneDialog}
