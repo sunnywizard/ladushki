@@ -1,0 +1,41 @@
+@import '../../../theme/styles/settings';
+
+.seller-icon {
+  width:45px;
+  height:auto;
+    margin-right:50%;
+    // cursor: pointer;
+    color:green;
+    background:#ffffff;
+    border:1px solid #979797;
+    box-shadow:0 0 8px #c2c2c2;
+    padding:5px;
+    border-radius:10%;
+  }
+  
+.seller-icon:hover {
+    margin-right:50%;
+    // cursor: pointer;
+    transition: all 0.2s linear;
+    color:#979797;    
+    box-shadow:0 0 8px #9c7c7c;
+  }
+
+  .seller-icon:active {
+    margin-right:50%;
+    // cursor: pointer;
+    transition: all 0.2s linear;
+    color:#EF3124;    
+    border:1px solid #979797;
+    box-shadow:0 0 8px #9c7c7c;
+  }
+  
+.correct-date {
+    font-weight:normal;
+    font-size:14px;
+    float: right;
+    color:#fc8a15;
+  }
+
+
+

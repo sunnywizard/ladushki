@@ -1,0 +1,24 @@
+@import '../../../theme/styles/settings';
+
+.breadcrumbs {
+  .list {
+    li {
+      margin-right:14px;
+      display:inline-block;
+
+      .link {
+        &:after {
+          position:relative;
+          content: '•';
+          font-family: 'slick';
+          font-size:6px;
+          line-height:30px;
+          text-align:center;
+          color:#fc8a15;
+          top:-2px;
+          left:7px;
+        }
+      }
+    }
+  }
+}

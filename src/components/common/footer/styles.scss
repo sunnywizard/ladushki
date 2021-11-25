@@ -1,0 +1,78 @@
+@import '../../../theme/styles/settings';
+
+
+//** footer main
+
+.footer-main {
+  font-size: 12px;
+  font-weight: normal;
+//  max-width: 1024px;
+  max-height: auto;  
+  margin-left: auto;
+  margin-right: auto;
+//  padding: 0px 138px 44px 120px;
+}
+
+.footer-main a {
+  font-size: 12px;
+  color: #006ec2;
+  text-decoration: none;
+}
+
+.footer-main a:hover {
+  font-size: 12px;
+  // color: #fc8a15;
+  text-decoration: none;
+}
+
+.fa-pic {
+  max-width: 18px;
+  margin-right: 5px;
+  &-social {
+    max-width: 24px;
+    margin-right: 15px;
+  }
+  &-whatsapp {
+    max-width: 24px;
+    margin-right: 15px;
+  }
+}
+.footer-soc a {
+  display: inline-block;
+  padding-right: 18px;
+  vertical-align: top;
+}
+.footer-soc a:hover img {
+    opacity: .6;
+    transition: .6s;
+}
+
+.footer-main-first {
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+
+.footer-soc-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.footer-main-second {
+  margin-top: 30px;
+}
+
+.footer-second {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.footer-third p {
+  font-size: 12px;
+  line-height: 1;
+  padding-bottom: 8px;
+  margin: 0;
+}
+

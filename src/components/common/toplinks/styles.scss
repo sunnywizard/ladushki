@@ -1,0 +1,15 @@
+@import '../../../theme/styles/settings';
+
+// .appbar {
+  // .top-links-wrap {background:#24afef;min-height:56px;padding:14px 0 10px;}
+  .top-links-wrap {background:#57AE47;min-height:56px;padding:14px 0 10px;}
+  // .top-links-wrap {background:#FC8A15;min-height:56px;padding:14px 0 10px;}
+  .top-links {max-width:770px;margin:0 auto;}
+  .top-links ul li {display:inline-block;margin-right:32px;}
+  .top-links ul li:last-child {margin-right:0;}
+  .top-links ul li .link_size_m{font-size:14px;font-weight:600;}
+  .top-links ul img{width:15px;margin-bottom:-2px;margin-right:9px;}
+  @media screen and (max-width:770px) {.top-links {padding:0 12px;}}
+// }
+.announcement {@include fonts($size-larger, $font-family-base);text-align:center;text-decoration:none;color:white;margin:auto;}
+.announcement :hover {@include fonts($size-larger, $font-family-base);text-align:center;text-decoration:underline;color:#f8f8f8;margin:auto;}

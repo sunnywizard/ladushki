@@ -1,0 +1,51 @@
+@import '../../../theme/styles/settings';
+
+.appbar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-height: 50px;
+  box-sizing: border-box;
+  z-index: 1;
+
+  //max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  //padding: 12px 138px 12px 120px;
+
+  //@include respond-to(medium, $type: max) {
+  //  padding-left: 48px;
+  //  padding-right: 48px;
+  //}
+  //
+  //@include respond-to(mobile) {
+  //  padding-left: 12px;
+  //  padding-right: 12px;
+  //}
+
+  &_position_fixed {
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+
+  &_position_absolute {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+
+  &_position_sticky {
+    position: sticky;
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+
+  &_position_static {
+    position: static;
+  }
+
+}

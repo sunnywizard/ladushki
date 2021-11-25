@@ -1,0 +1,55 @@
+@import '../../../../theme/styles/settings';
+
+.student-form {
+   @include respond-to(mobile) {
+     padding-left:12px;
+     padding-right:12px;
+   }
+
+  .input .input__inner {
+    background:#FFFFFF;
+    // border:1px solid #979797;
+    padding-left:12px;
+  }
+
+  .input .input__control {
+    padding:5px 0;
+  }
+
+  .input-phone {
+    min-width: max-content;
+  }
+  .photo-input {
+    width:512px;
+    margin:0 auto;
+  }
+
+  .soc-pic {
+    display:inline-block;
+    width:20px;
+    margin-right:10px;
+  }
+  .soc-input .input {
+    // width:calc(100% - 30px);
+    width:calc(100% - 10px);
+    display:inline-block;
+  }
+  &-action {
+    text-align:center;
+    margin-top:24px;
+  }
+
+  .modal-header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ }
+
+
+
+
+
+
+

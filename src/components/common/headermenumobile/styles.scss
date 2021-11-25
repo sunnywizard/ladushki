@@ -1,0 +1,149 @@
+@import '../../../theme/styles/settings';
+
+.header-menu-mobile {
+  width:100%;
+  height:150%;
+  // position:fixed;
+  position:relactive;
+  // top:195px;
+  top:0px;
+  @media only screen and (min-width:600px) {
+    // top:130px;
+    top:0px;
+  }
+  // top:30.47vh;
+  // left:auto;
+  left:0;
+  right:0;
+  display:none;
+  // background-color:rgba(0, 0, 0, 0.18);
+  // background-color:yellowgreen;
+  background-color:#FFF;
+  z-index: 9998;
+  // padding:10px 20px;
+
+  &-open {
+    display:block;
+  }
+
+  &-wrapper {
+    // background-color:rgba(255, 255, 255, 1);
+    // background-color:rgba(255, 255, 255, 1);
+    background-color:rgba(255, 255, 255, 1);
+    position:fixed;
+    // top:195px;
+    top:0px;
+    // left:0px;
+    width:100%;
+    height:100%;
+    z-index: 9999;
+  }
+
+  &-sub-menu {
+    display:none;
+  }
+
+  &-sub-menu-open {
+    display:block;
+  }
+
+}
+
+// .navbar {
+//   overflow: hidden;
+//   // background-color:green;
+//   position:fixed;
+//   top:0;
+//   width:100%;
+//   z-index: 99;
+// }
+
+.close-btn1 {
+  position:absolute;
+  right:100px;
+  top:10px;
+  color:#f30303;
+  z-index: 9991;
+  font-size:48px;
+  line-height:28px;
+  cursor: pointer;
+}
+// ------
+.expansioncw-panel {
+  // border:1px solid #b4b4b4;
+  padding:10px 20px 10px 20px;
+  margin-bottom:10px;
+
+  &-title {
+    padding:10px 0;
+
+    .link {
+      display:block;
+      position:relative;
+
+      .link__icon {
+        position:absolute;
+        right:-10px;
+
+        &-close {
+          transform: rotate(0deg);
+          transition: all 0.2s linear;
+        }
+
+        &-open {
+          transform: rotate(180deg);
+          transition: all 0.2s linear;
+        }
+
+      }
+    }
+
+  }
+
+  &-content {
+    &-open {
+      padding-top:10px;
+      padding-bottom:10px;
+    }
+  }
+
+}
+
+// *********
+.link__icon {
+  position:absolute;
+  right:-10px;
+
+  &-close {
+    transform: rotate(0deg);
+    transition: all 0.2s linear;
+  }
+
+  &-open {
+    transform: rotate(180deg);
+    transition: all 0.2s linear;
+    color:red;
+  }
+
+}
+
+li {
+    content: '•';
+    color:#FFF;
+    left:0px;
+  }
+
+  .toplink_m {
+    // text-overflow: ellipsis; /* Добавляем многоточие */
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis; /* Добавляем многоточие */
+    overflow: hidden;
+    -ms-line-clamp: 1; /* Определяем количество строк в line-clamp, здесь строка 1 */
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    display:-webkit-box;
+    display:box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+  }

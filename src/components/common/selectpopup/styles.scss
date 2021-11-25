@@ -1,0 +1,32 @@
+.select-popup {
+  cursor: pointer;
+  // padding:2px 0px;
+  
+  // &-title{
+  //   font-size:12px;
+  //   font-weight:600;
+  //   padding-bottom:20px;
+  // }
+}
+
+.teacher-online-list {
+  // padding:2px 0px;
+
+  li {
+    // padding-left:1px;
+    // padding-right:1px;
+    font-size:14px;
+    color:#777;
+    // border:1px solid #ad0101;
+    padding:2px 5px 2px 5px;
+  }
+  li:hover {
+    // background-color:#dddddd; // цвет маркера
+    // background-color:#006ec2; // цвет маркера
+    background-color:#24afef; // цвет маркера
+  
+    color:#FFF;
+    cursor: pointer;
+  }
+}
+

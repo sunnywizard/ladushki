@@ -1,0 +1,26 @@
+.image-upload-field {
+  max-width:512px;
+  margin:0 auto;
+  &-label {
+    text-align:left;
+  }
+  &-wrapper {
+    border:1px solid #979797;
+    min-height:216px;
+    position:relative;
+  }
+
+  .icon-button {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-right:-50%;
+    transform: translate(-50%, -50%);
+    box-shadow:none;
+    border:0;
+  }
+
+  img {
+    width:100%;
+  }
+}

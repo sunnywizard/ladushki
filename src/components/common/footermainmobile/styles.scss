@@ -1,0 +1,128 @@
+@import '../../../theme/styles/settings';
+
+.footer-main {
+  font-size:12px;
+  font-weight:normal;
+//  max-width:1024px;
+  max-height:650px; 
+  margin-left:auto;
+  margin-right:auto;
+//  padding:35px 138px 44px 120px;
+}
+
+.footer-main a {
+  font-size:12px;
+  color:#FFF;
+  text-decoration:none;
+}
+
+// .footer-main a:hover {
+//   font-size:12px;
+//   // color:#434343;
+//   color:#fc8a15;
+//   text-decoration:none;
+// }
+.fa-pic {
+  max-width:12px;
+  margin-right:5px;
+}
+.footer-soc a {
+  display:inline-block;
+  padding-right:18px;
+  vertical-align: top;
+}
+.footer-soc a:hover img {
+    opacity: .6;
+    transition: .6s;
+}
+
+.footer-main-first {
+  font-size:14px;
+  font-weight:600;
+  padding-bottom:6px;
+}
+
+.footer-soc-title {
+  font-size:14px;
+  font-weight:600;
+  margin-top:16px;
+  margin-bottom:6px;
+}
+
+.footer-main-second {
+  margin-top:30px;
+}
+
+.footer-second {
+  text-align:center;
+  padding-bottom:10px;
+}
+
+.footer-third p {
+  font-size:12px;
+  line-height:1;
+  padding-bottom:8px;
+  margin:0;
+}
+
+// .footer__content__disclaimer{
+//   .footer_cookies_link{
+//     color:#FC8A15;
+
+//   }
+// }
+
+.footer_button {
+  // font-size:18px;
+  color:white;
+  @include fonts($size-xslarger, $font-family-base);
+  // font-size:18px;
+  margin:0 0px -6px 0;
+}
+
+
+// Волна для FooterMain banner__content смотри в main.scss секция .footer_wrapper {
+// .banner__content {
+//   background:linear-gradient(180deg, #0e78c9  0%, #7125ce 100%);
+//   padding-top:8%;
+//   padding-bottom:8%;
+//   margin-top:-55px;
+// }
+// .banner svg {
+//   width:100%;
+//   font-size:larger;
+//   // fill: #24afef;
+// }
+
+.icon-color {
+  // color:white;
+  width:auto;
+  height:1.2em;
+  // margin-left:-5em;
+}
+
+.warn-footer {
+  @include fonts($size-default, $font-family-base);
+}
+
+
+.svg-content {
+  display:inline-block;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.svg-container {
+display:inline-block;
+position:relative;
+width:100%;
+padding-bottom:100%;
+vertical-align: middle;
+overflow: hidden;
+}
+
+
+.chevron-footer {
+    padding:8px 0px 0px 5px;
+}

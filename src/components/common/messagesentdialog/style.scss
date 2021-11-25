@@ -1,0 +1,26 @@
+.container {
+  padding: 8px;
+  max-width: 636px;
+  font-family: "Montserrat Regular", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+}
+
+.dialog-header {
+  margin: 30px 90px 30px 90px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.confirm-text {
+  display: block;
+  margin: 40px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+button.button_med {
+  min-width: 100px;
+}
