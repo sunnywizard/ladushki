@@ -1,5 +1,5 @@
 **Size full project**: File: 1293 Folder: 414
-- JS, HTML /DHTML, CSS/SCSS, React
+- JS, HTML /DHTML, CSS/SCSS, React, Redux
 
 
 <!---
