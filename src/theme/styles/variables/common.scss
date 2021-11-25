@@ -1,0 +1,79 @@
+@import "color";
+
+$font-path: "../../static/images";
+$image-path: "../images";
+
+$font-family-base: "Montserrat Regular", sans-serif;
+$font-family-secondary: "Montserrat SemiBold", sans-serif;
+$font-family-third: "Montserrat ExtraBold", sans-serif;
+$font-family-fourth: "Montserrat Bold", sans-serif;
+$font-family-five: "PlayfairDisplay Bold", sans-serif;
+$font-family-six: "PlayfairDisplay Black", sans-serif;
+
+$body-text-family: $font-family-base;
+$body-line-height: 1.6;
+$text-color: $black;
+$link-color: $black;
+
+/* Sizes */
+
+$size-default: 16px;
+$size-xxl: ceil(($size-default * 2.5)); // ~402px
+$size-large: ceil(($size-default * 1.375)); // ~22px
+$size-larger: ceil(($size-default * 1.125)); // ~18px
+$size-small: ceil(($size-default * 0.875)); // ~14px
+$size-xs: ceil(($size-default * 0.75)); // ~12px
+$size-xxs: ceil(($size-default * 0.625)); // ~10px
+
+/* Spaces */
+
+$vertical-space-large: 24px;
+
+/* Heading */
+
+$heading-color: $primary;
+$heading-font-family: $font-family-base;
+$heading-line-height: 1.2;
+$heading-bottom-space: 24px;
+
+$h1-font-size: ceil(($size-default * 2.00)); //32px
+$h2-font-size: ceil(($size-default * 1.75)); //28px
+$h3-font-size: ceil(($size-default * 1.5)); //24px
+$h4-font-size: ceil(($size-default * 1.125)); //18px
+$h5-font-size: $size-default; //16px
+$h6-font-size: ceil(($size-default * 0.88)); //14px
+
+$h1-font-size-mobile: 24px;
+$h2-font-size-mobile: 20px;
+$h3-font-size-mobile: 18px;
+
+/* Different */
+$controls-height: 36px;
+$opacity-main: 0.5;
+
+/* buttons */
+$button-radius: 20px;
+$button-radius1: 10px;
+$button-size: $size-larger;
+$button-size1: $size-small;
+$button-family: $font-family-secondary;
+$button-family1: $font-family-base;
+$button-line-height: 1;
+$button-pad-v: calc((#{$controls-height} - #{$button-size}) / 2);
+$button-pad-h: 28px;
+$button-pad: $button-pad-v $button-pad-h;
+
+/* input */
+$input-pad-value: 15px;
+$input-bg: white;
+$input-pad: 0px $input-pad-value;
+$input-height: $controls-height;
+$input-size: $size-small;
+//$input-family: $font-family-secondary;
+$input-family: $font-family-base;
+$input-color: $text-color;
+
+/* form error message */
+$form-error-message-text: red;
+$form-error-message-size: $size-xs;
+$form-error-message-family: $input-family;

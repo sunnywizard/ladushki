@@ -1,0 +1,223 @@
+button.button {
+  border-radius: $button-radius;
+  border: 0 none;
+  height: auto;
+  line-height: $button-line-height;
+  padding: $button-pad;
+  // color: white;
+  color: #201600;
+  @include fonts($button-size, $button-family1);
+  transition: all 0.2s linear;
+  text-transform: none;
+
+  &:hover, &:focus, &:active {
+    transition: all 0.2s linear;
+  }
+
+  &_default {
+    background-color: $lightgreen;
+    &:hover, &:focus, &:active {
+      background-color: #fc8a15;
+      color:#fff;
+    }
+  }
+
+  &_secondary {
+    background-color: #aad7ac;
+    &:hover, &:focus, &:active {
+      color: white;
+      // background-color: #e27a14;
+      background-color: #fd6b0d;
+    }
+  }
+  &_modal {
+    @include fonts($size-small, $font-family-base);
+  }
+  &_modalblue {
+    font-size: 14px;
+    background: #29266a;
+    &:hover, &:focus, &:active {
+      background-color: #e27a14;
+    }
+  }
+  &_cancel{
+    font-size: 14px;
+    background: #979797;
+    &:hover, &:focus, &:active {
+      background-color: #828282;
+    }
+  }
+  &_upload{
+    font-size: 14px;
+    background: rgba(41, 38, 106, 0.5);
+    &:hover, &:focus, &:active {
+      background-color: #e27a14;
+    }
+  }
+
+  > .button__text {
+    overflow: inherit;
+  }
+
+  &_disabled {
+    .button__text {
+      color: white;
+      opacity: $opacity-main;
+    }
+  }
+
+  &_focused {
+    box-shadow: none;
+  }
+
+  &_link {
+    border: 0;
+    padding: 0;
+    line-height: $body-line-height;
+    background: none;
+    @include fonts($size-small, $font-family-secondary);
+    color: #29266a;
+
+    &:hover, &:focus, &:active {
+      border: 0;
+    }
+  }
+
+  &.icon-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  &_settings-lada {
+    background-color: #fff;
+    border-bottom: 2px solid #979797;
+    box-shadow: 0 5px 4px #c2c2c2;
+    color: #78ad5e;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 7px 20px;
+    &:hover, &:focus, &:active {
+color: #fd6b0d;
+    // background-color: #fc8a15;
+    // box-shadow: 0 0 8px #c2c2c2;
+    // box-shadow: 30px 0 40px -20px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #979797;
+    box-shadow: none;
+    }
+  }
+  &_settings-lada-cancel {
+    background-color: #fff;
+    border-bottom: 2px solid #979797;
+    box-shadow: 0 5px 4px #c2c2c2;
+    background: #c2c2c2;
+    color: $blacklada;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 7px 20px;
+    &:hover, &:focus, &:active {
+      color: #fff;
+    // background-color: #fc8a15;
+    // box-shadow: 0 0 8px #c2c2c2;
+    // box-shadow: 30px 0 40px -20px rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid #979797;
+      box-shadow: none;
+    }
+  }  
+
+  &_settings-form, &_settings-message, &_settings-cancel {
+    background-color: #aad7ac;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 7px 20px;
+    &:hover, &:focus, &:active {
+    background-color: #fc8a15;
+    color: #fff;
+    }
+  }
+  &_settings-message {
+    background: #F6F6F6;
+    border: 1px solid #979797;
+    color: #000000;
+  }
+  &_settings-cancel {
+    background: #979797;
+    &:hover, &:focus, &:active {
+      background-color: #828282;
+    }
+  }
+  &_cyberweek-filter {background:#fff;font-style:normal;font-weight:400;font-size:12px;padding:7px 20px;color:#0e78c9;border:1px dotted #0e78c9;@include fonts($button-size, $button-family);
+    &:hover, &:focus, &:active {background-color:#fff;font-style:normal;font-weight:400;font-size:12px;padding:7px 20px;color:#000;border:1px solid #000;@include fonts($button-size, $button-family);}
+  }
+
+}
+
+button.button1 {
+  border-radius: $button-radius1;
+  // border: 0 none;
+  height: auto;
+  line-height: $button-line-height;
+  padding: $button-pad;
+  color: #006ec2;
+  border: 1px solid #006ec2;
+  @include fonts($button-size, $button-family);
+  transition: all 0.2s linear;
+  text-transform: none;
+
+  &:hover, &:focus, &:active {
+    transition: all 0.2s linear;
+  }
+
+  &_settings-form, &_settings-message, &_settings-cancel {
+    background-color: #ffffff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 15px;
+    border: 1px solid #006ec2;
+    &:hover, &:focus, &:active {
+    background-color: #ffffff;
+    border: 1px solid #006ec2;
+    }
+  }
+}
+
+button.button2 {
+  border-radius: $button-radius;
+  // border: 0 none;
+  height: auto;
+  // height: 40px;
+  line-height: $button-line-height;
+  padding: $button-pad;
+  color: #006ec2;
+  border: 1px solid #006ec2;
+  @include fonts($button-size1, $button-family1);
+  transition: all 0.2s linear;
+  text-transform: none;
+
+  &:hover, &:focus, &:active {
+    transition: all 0.2s linear;
+  }
+  &_settings-footer {
+        // color: #57AE47;
+        color: $blacklada;
+        @include fonts($size-small, $font-family-base);
+        text-decoration: none;
+        background-color: none;
+        font-style: normal;
+        font-weight: 600;
+        // font-size: 12px;
+        padding: 7px 20px;
+        // border: 1px solid #57AE47;
+        border: 1px solid $blacklada;
+        // z-index: -1;
+        &:hover, &:focus, &:active {
+    //      background-color: #e27a14;
+        color: #FD6B0D;
+        background-color: #ffffff;
+        border: 1px solid #FD6B0D;
+        }
+      } 
+}

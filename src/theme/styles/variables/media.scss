@@ -1,0 +1,18 @@
+$media-min: min-width;
+$media-max: max-width;
+
+$breakpoints: (
+	xxs:    380px,
+	xs:     576px,
+	small:  768px,
+	medium: 992px,
+	large:  1200px,
+	huge:   1400px,
+);
+
+$orientations: (
+	portrait: '(orientation: portrait) and (max-width: calc(#{map-get($breakpoints, small)} - 1px))',
+	landscape: '(orientation: landscape) and (max-width: calc(#{map-get($breakpoints, small)} - 1px))',
+	landscapeTablet: '(orientation: landscape) and (min-width: #{map-get($breakpoints, small)}) and (max-width: calc(#{map-get($breakpoints, medium)} - 1px))',
+	print: 'print'
+);

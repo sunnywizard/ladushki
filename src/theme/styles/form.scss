@@ -1,0 +1,106 @@
+.input {
+  width: 100%;
+
+  .input__box {
+    background-color: $input-bg;
+    border: 0 none !important;
+    height: $input-height;
+    padding: $input-pad;
+  }
+
+  .input__control {
+    background-color: $input-bg !important;
+    color: $input-color;
+    @include fonts($input-size, $input-family);
+
+    @include placeholder() {
+      color: $grey;
+    }
+
+    &:-webkit-autofill {
+      box-shadow: none;
+    }
+  }
+
+  &.input_invalid {
+    .input__sub {
+      color: $form-error-message-text;
+      padding: 6px $input-pad-value 0;
+      @include fonts($form-error-message-size, $form-error-message-family);
+    }
+  }
+
+  &_secondary {
+
+    .input__inner {
+      background: #FFFFFF;
+      border: 1px solid #979797;
+      padding-left:12px;
+    }
+
+    .input__control {
+      padding: 5px 0;
+    }
+
+  }
+
+  &_code {
+    width: 150px;
+  }
+}
+
+.textarea {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.radio {
+  .checkbox__text {
+    @include fonts($input-size, $input-family);
+  }
+}
+
+.checkbox {
+  .checkbox__text {
+    @include fonts($input-size, $input-family);
+  }
+}
+
+.checkbox_secondary {
+  .checkbox__text {
+    @include fonts($size-xs, $font-family-base);
+  }
+}
+
+.form-field {
+  margin: 10px 0px;
+}
+.form-field1 {
+  margin: -20px 0px 10px 0;
+}
+.form-field2 {
+  margin: -40px 0px 30px 0;
+}
+
+.form-text {
+  @include fonts($size-xxs, $font-family-base);
+}
+.text-left {
+  margin-left: 0%;
+  text-align:left;
+  align-items: flex-start;
+}
+.form-social {
+  margin-top: 10px;
+  img {
+    margin: 0 7px;
+  }
+  &-title {
+    margin: 10px 0;
+  }
+}
+
+.form-buttons {
+  margin: 10px 0 20px 0;
+}

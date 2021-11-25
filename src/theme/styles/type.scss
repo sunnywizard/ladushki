@@ -1,0 +1,54 @@
+/*
+ * Titles
+ */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $heading-color;
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+  margin-top: $heading-bottom-space;
+  margin-bottom: $heading-bottom-space;
+  @include respond-to(desktop) {
+    margin-top: $vertical-space-large;
+    margin-bottom: $vertical-space-large;
+  }
+}
+
+$title-list: (
+  h1    $h1-font-size,
+  h2    $h2-font-size,
+  h3    $h3-font-size,
+  h4    $h4-font-size,
+  h5    $h5-font-size,
+  h6    $h6-font-size
+);
+
+$title-list-mobile: (
+  h1    $h1-font-size-mobile,
+  h2    $h2-font-size-mobile,
+  h3    $h3-font-size-mobile,
+);
+
+@each $value in $title-list {
+  #{nth($value, 1)},
+  .#{nth($value, 1)} {
+    font-size: nth($value, 2);
+  }
+}
+
+@each $value in $title-list-mobile {
+  #{nth($value, 1)},
+  .#{nth($value, 1)} {
+    @include respond-to(mobile) {
+      font-size: nth($value, 2);
+    }
+  }
+}
+
+/* ul, ol */
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,169 @@
+/* Helpers */
+
+/* Styles */
+
+$helper-styles: (
+  font_italic: italic,
+  font_bold: $font-family-secondary,
+
+  height100: 100%,
+  width100: 100%,
+  max_width100: 100%,
+
+  hidden: hidden,
+  none: none !important,
+  right: right,
+  left: left,
+  space_nowrap: nowrap,
+  text_right: right,
+  text_center: center,
+  relative: relative
+);
+
+@function helper($key) {
+  @if map-has-key($helper-styles, $key) {
+    @return map-get($helper-styles, $key);
+  }
+  @warn "Unknown `#{$key}` in $helper-styles.";
+  @return null;
+}
+
+/* Styles */
+
+$helper-list: (
+  italic            font-style       helper(font_italic),
+  bold              font-family      helper(font_bold),
+  h-100             height           helper(height100),
+  w-100             width            helper(width100),
+  max-img           max-width        helper(max_width100),
+  overflow          overflow         helper(hidden),
+  right             float            helper(right),
+  left              float            helper(left),
+  w-space           white-space      helper(space_nowrap),
+  hidden            display          helper(none),
+  text-right        text-align       helper(text_right),
+  text-center       text-align       helper(text_center),
+  relative          position         helper(relative),
+);
+
+@each $value in $helper-list {
+  .#{nth($value, 1)} {
+    #{nth($value, 2)}: nth($value, 3);
+  }
+}
+
+/* Text align */
+
+$text-align: (
+  left: left,
+  right: right,
+  center: center
+);
+
+.text {
+  @each $status, $align in $text-align {
+    &-#{$status} {
+      text-align: $align;
+    }
+  }
+}
+
+/* Margin bottom */
+
+$space-bottom: (
+  b60: 60px,
+  b40: 40px,
+  b20: 20px,
+  b30: 30px,
+  b10: 10px !important,
+  b0:  0 !important
+);
+
+.m {
+  @each $status, $marg in $space-bottom {
+    &-#{$status} {
+      margin-bottom: $marg;
+    }
+  }
+}
+
+/* Margin top */
+
+$space-top: (
+  t60: 60px,
+  t40: 40px,
+  t20: 20px,
+  t30: 30px,
+  t10: 10px !important,
+  t0:  0 !important
+);
+
+.m {
+  @each $status, $marg in $space-top {
+    &-#{$status} {
+      margin-top: $marg;
+    }
+  }
+}
+
+/* Margin right */
+
+$space-right: (
+  r20: 20px,
+  r10: 10px
+);
+
+.m {
+  @each $status, $marg in $space-right {
+    &-#{$status} {
+      margin-right: $marg;
+    }
+  }
+}
+
+/* Margin left */
+
+$space-left: (
+  l20: 20px,
+  l10: 10px
+);
+
+.m {
+  @each $status, $marg in $space-left {
+    &-#{$status} {
+      margin-left: $marg;
+    }
+  }
+}
+
+.dot_before {
+  margin-left: 24px;
+  position: relative;
+
+  &:before {
+    content: '• ';
+    font-family: 'slick';
+    font-size: 10px;
+    line-height: 30px;
+    text-align: center;
+    color: #fc8a15;
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+//Desktop
+@media ($media-max: map-get($breakpoints, small) - 1px) {
+  .desktop {
+    display: none !important;
+  }
+}
+
+// Mobile
+@media ($media-min: map-get($breakpoints, small)) {
+  .mobile {
+    display: none !important;
+  }
+}

@@ -1,0 +1,27 @@
+@mixin background($bgSize: cover, $bgPosition: 0 0) {
+  background: {
+    size: $bgSize;
+    position: $bgPosition;
+    repeat: no-repeat;
+  }
+}
+
+@mixin clearfix {
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
+
+@mixin fonts($font-size, $font-family) {
+  font: {
+    family: $font-family;
+    size: $font-size;
+  }
+}
+
+@mixin placeholder {
+  &.placeholder,
+  &[placeholder],
+  &::placeholder {
+    @content;
+  }
+}
