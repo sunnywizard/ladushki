@@ -32,7 +32,6 @@ import './styles.scss';
 import { doctorBlock, reportAnswer } from '../../../core/utils/testdata';
 import '../../../theme/styles/settings.scss';
 
-// export default function Home({ navigationTo }) {
 export default function Home() {
   // Cookies.remove('lang');
   Cookies.remove('lang', { path: '' });
